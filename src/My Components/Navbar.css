@@ -1,37 +1,67 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.navbarHeader{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
+.navbarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
-.Navbarlogo a img{
-    width: 80px;
+.Navbarlogo a img {
+  width: 80px;
 }
-.navbarHeader ul{
-    display: flex;
-    list-style: none;
+.navbarHeader ul {
+  display: flex;
+  list-style: none;
 }
-.navbarHeader li{
-    margin: 0 1.5rem;
+.navbarHeader li {
+  margin: 0 1.5rem;
 }
-.navbarHeader li a{
-    text-decoration: none;
-    color: #333333;
+.navbarHeader li a {
+  text-decoration: none;
+  color: #333333;
 }
 .navbarHeader ul li a:hover {
-    color: #FF5722;
-  }
-.accountLinks a{
-    padding: 0 10px;
-    color: #333333; 
-   text-decoration: none;
+  color: #ff5722;
+}
+.accountLinks a {
+  padding: 0 10px;
+  color: #333333;
+  text-decoration: none;
 }
 .accountLinks a:hover {
-    color: #FF5722; 
+  color: #ff5722;
+}
+@media (max-width: 550px) {
+  .navbarHeader {
+    flex-direction: column;
   }
+
+  .Navbarlogo {
+    margin-bottom: 1rem;
+  }
+
+  .navbarHeader ul {
+    flex-direction: column;
+    align-items: center;
+    font-size: 4px;
+  }
+
+  .accountLinks {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbarHeader ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbarHeader ul li {
+    margin: 1rem 0;
+    font-size: 15px;
+  }
+}
