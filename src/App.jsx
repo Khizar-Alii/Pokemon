@@ -1,4 +1,4 @@
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./My Components/Navbar";
 import Pokemonz from "./My Components/Pokemonz";
 import About from "./My Components/About";
@@ -11,7 +11,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
+      
         <Route path="/" element={<Pokemonz />} />
+        <Route path="/Pokemon" element={<Pokemonz />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
