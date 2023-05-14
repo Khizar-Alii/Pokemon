@@ -1,0 +1,81 @@
+.pokemonDiv {
+  font-family: "Poppins", sans-serif;
+}
+.allPokemon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.searchBox {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.searchBox input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.searchBox input:focus {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pokemonBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  width: 180px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.pokemonBox:hover {
+  transform: scale(1.05);
+}
+
+.pokemonBox h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+.linksToDetails {
+  text-decoration: none;
+  color: black;
+}
+
+.pokemonBox img {
+  width: 120px;
+  height: 120px;
+}
+.paginationButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.paginationButtons button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.paginationButtons button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}

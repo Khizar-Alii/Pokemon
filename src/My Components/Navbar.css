@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbarHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+.Navbarlogo a img{
+    width: 80px;
+}
+.navbarHeader ul{
+    display: flex;
+    list-style: none;
+}
+.navbarHeader li{
+    margin: 0 1.5rem;
+}
+.navbarHeader li a{
+    text-decoration: none;
+    color: #333333;
+}
+.navbarHeader ul li a:hover {
+    color: #FF5722;
+  }
+.accountLinks a{
+    padding: 0 10px;
+    color: #333333; 
+   text-decoration: none;
+}
+.accountLinks a:hover {
+    color: #FF5722; 
+  }
